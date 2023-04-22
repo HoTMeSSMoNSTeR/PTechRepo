@@ -145,7 +145,7 @@ Question 5: isEven  \n`);
  * Step 1:  Create a function called "isEven"(See documentation: )
         * The function takes in one input parameter of x, that will be a number
         * This function will return true if x is even and false if x is odd
-        * Numeric value is given as an argument to functions below
+        * Numeric x is given as an argument to functions below
         * Hint: use the % operator to determine if a number is even or odd (See documentation: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder)
  * Step 2: Uncomment the Sample test cases provided below
  * 
@@ -222,24 +222,25 @@ Question 7: reverse \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-function reverse(value) {
-       if (typeof value === "boolean") {
-              return !value
-       } else if (typeof value === "array") {
-              value.reverse()
-              return value
-       } else if 
+function reverse(x) {
+       if (typeof x === "boolean") {
+              return !x
+       } else if (typeof x === "number") {
+              return x.toString().split("").reverse("").join("")
+       } else if (Array.isArray(x)) {
+              return x.reverse()
+       } else if (typeof x === "string") {
+              return x.split("").reverse("").join("")
+       }
 }
-
-
 
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above reverse function (uncomment to test)
-//console.log(reverse(1234));         //should return 4321
-//console.log(reverse('hello'));      //should return 'olleh'
-//console.log(reverse(true));         //should return false
-//console.log(reverse([1, 2, 3, 4])); //should return [4, 3, 2, 1]
+console.log(reverse(1234));         //should return 4321
+console.log(reverse('hello'));      //should return 'olleh'
+console.log(reverse(true));         //should return false
+console.log(reverse([1, 2, 3, 4])); //should return [4, 3, 2, 1]
 
 
 
@@ -262,14 +263,18 @@ Question 8: removeElements \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+function removeElements(array) {
+       while (array.length > 0) {
+              array.pop()
+       } return array
+}
 
 
 
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above removeElements function (uncomment to test)
-//console.log(removeElements([1, 2, 3, 4, 5])); //should return [] (an empty array)
+console.log(removeElements([1, 2, 3, 4, 5])); //should return [] (an empty array)
 
 
 
@@ -288,7 +293,15 @@ Question 9: whichArrayIsLonger  \n`);
  *
  *
  * ↓ YOUR CODE HERE ↓ */
-
+function whichArrayIsLonger(array1, array2) {
+       if (array1.length > array2.length) {
+              return array1
+       } else if (array2.length > array1.length) {
+              return array2
+       } else {
+              return false
+       }
+}
 
 
 
@@ -296,6 +309,6 @@ Question 9: whichArrayIsLonger  \n`);
 /* ↑ YOUR CODE HERE ↑ */
 
 // Sample test cases for the above whichArrayIsLonger function (uncomment to test)
-//console.log(whichArrayIsLonger([1, 2, 3, 4, 5], [1, 2, 3, 4]));    //should return [1, 2, 3, 4, 5]
-//console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4, 5, 6])); ///should return [1, 2, 3, 4, 5, 6]
-//console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4]));       //should return false (because they are the same length)
+console.log(whichArrayIsLonger([1, 2, 3, 4, 5], [1, 2, 3, 4]));    //should return [1, 2, 3, 4, 5]
+console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4, 5, 6])); ///should return [1, 2, 3, 4, 5, 6]
+console.log(whichArrayIsLonger([1, 2, 3, 4], [1, 2, 3, 4]));       //should return false (because they are the same length)
