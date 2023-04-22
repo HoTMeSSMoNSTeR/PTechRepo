@@ -153,11 +153,11 @@ Question 5: isEven  \n`);
  * ↓ YOUR CODE HERE ↓ */
 
 function isEven(x) {
-    if (x % 2 == 0) {
-        return true
-    } else {
-        return false
-    }
+       if (x % 2 == 0) {
+              return true
+       } else {
+              return false
+       }
 }
 
 /* ↑ YOUR CODE HERE ↑ */
@@ -183,11 +183,15 @@ Question 6: addingMachine \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-function addingMachine(x) {
-    for (i = 0; i >= x.length; i++) {
-
-    }
+function addingMachine(array) {
+       let sum = 0;
+       for (let i = 0; i < array.length; i++) {
+              sum += array[i]
+       }
+       return sum
 }
+
+
 
 /* ↑ YOUR CODE HERE ↑ */
 
@@ -218,7 +222,14 @@ Question 7: reverse \n`);
  * 
  * ↓ YOUR CODE HERE ↓ */
 
-
+function reverse(value) {
+       if (typeof value === "boolean") {
+              return !value
+       } else if (typeof value === "array") {
+              value.reverse()
+              return value
+       } else if 
+}
 
 
 
