@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../PROMINEO TECH LABS/New-FrontEnd-Labs/week06labs"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PTechRepo"
+	}
+}
