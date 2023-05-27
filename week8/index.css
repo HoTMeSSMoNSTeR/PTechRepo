@@ -1,0 +1,227 @@
+body {
+    background-color: black;
+    background-size: cover;
+    color: white;
+    margin-left: 3%;
+    margin-top: 3%;
+    font-family: 'Pangolin', cursive;
+}
+
+h1 {
+    color: magenta;
+}
+
+h2 {
+    color: rgb(17, 252, 0);
+}
+
+a {
+    font-size: xx-large;
+    color: rgb(17, 252, 0);
+}
+
+a:hover {
+    color: aqua;
+}
+
+a:visited {
+    color: magenta;
+}
+
+a:visited:hover {
+    color: rgb(17, 252, 0);
+}
+
+#hobbies {
+    margin-left: 20%;
+    font-size: xx-large;
+}
+
+#main-img {
+    width: 25%;
+    margin: 10px;
+    border-radius: 15%;
+    box-shadow: -3px 3px 20px 5px rgba(284, 74, 167, 0.7);
+}
+
+#hover-img {
+    width: 25%;
+}
+
+#main-img:hover,
+#hover-img:hover {
+    width: 30%;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+}
+
+td:hover {
+    background-color: magenta;
+    color: black;
+    font-weight: bold;
+}
+
+table {
+    color: white;
+    border: 2px;
+}
+
+img {
+    border-radius: 15%;
+    box-shadow: -3px 3px 20px 5px rgba(284, 74, 167, 0.7);
+}
+
+button {
+    background-color: magenta;
+    color: black;
+    border-radius: 10%;
+    font-family: 'Pangolin', cursive;
+    font-size: larger;
+}
+
+button:hover {
+    animation: glow;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+li:hover {
+    color: magenta;
+}
+
+.pageLink {
+    margin: 3%;
+}
+
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 20px 0px black;
+    }
+
+    5% {
+        box-shadow: 0 0 30px 5px black;
+    }
+
+    10% {
+        box-shadow: 0 0 40px 10px black;
+    }
+
+    15% {
+        box-shadow: 0 0 50px 15px black;
+    }
+
+    20% {
+        box-shadow: 0 0 50px 20px black;
+    }
+
+    25% {
+        box-shadow: 0 0 50px 25px black;
+    }
+
+    30% {
+        box-shadow: 0 0 50px 30px black;
+    }
+
+    35% {
+        box-shadow: 0 0 50px 35px black;
+    }
+
+    40% {
+        box-shadow: 0 0 50px 40px black;
+    }
+
+    45% {
+        box-shadow: 0 0 50px 45px black;
+    }
+
+    50% {
+        box-shadow: 0 0 50px 50px black;
+    }
+
+    55% {
+        box-shadow: 0 0 50px 55px black;
+    }
+
+    60% {
+        box-shadow: 0 0 50px 60px black;
+    }
+
+    65% {
+        box-shadow: 0 0 50px 65px black;
+    }
+
+    70% {
+        box-shadow: 0 0 50px 70px black;
+    }
+
+    75% {
+        box-shadow: 0 0 50px 75px black;
+    }
+
+    80% {
+        box-shadow: 0 0 50px 80px black;
+    }
+
+    85% {
+        box-shadow: 0 0 50px 85px black;
+    }
+
+    90% {
+        box-shadow: 0 0 50px 90px black;
+    }
+
+    95% {
+        box-shadow: 0 0 50px 95px black;
+    }
+
+    100% {
+        box-shadow: 0 0 50px 100px black;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
