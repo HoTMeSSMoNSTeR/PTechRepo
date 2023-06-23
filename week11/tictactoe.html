@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tictactoe.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+</head>
+
+<body id="the-body">
+    <h1>TIC-TAC-TOE</h1>
+    <div class="game-area">
+        <div cellIndex="0" class="box"></div>
+        <div cellIndex="1" class="box"></div>
+        <div cellIndex="2" class="box"></div>
+        <div cellIndex="3" class="box"></div>
+        <div cellIndex="4" class="box"></div>
+        <div cellIndex="5" class="box"></div>
+        <div cellIndex="6" class="box"></div>
+        <div cellIndex="7" class="box"></div>
+        <div cellIndex="8" class="box"></div>
+    </div>
+
+    <h2 id="player-turn" class="whos-turn"></h2>
+    <button id="reset-btn" class="reset">Reset Game</button>
+
+    <div id="modal-id" class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">WINNER!!!!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p id="modal-text"></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="tictactoe.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+</body>
+
+</html>

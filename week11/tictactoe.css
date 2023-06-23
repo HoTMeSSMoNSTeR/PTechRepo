@@ -1,0 +1,22 @@
+h1 {
+    margin-left: 20%;
+    padding-top: 5%;
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 300px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    box-shadow: 1px 1px 10px black;
+    font-size: xx-large;
+}
