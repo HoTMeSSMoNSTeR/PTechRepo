@@ -6,70 +6,27 @@ let modalText = document.getElementById("modal-text")
 
 
 let winningCombos = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7], [2, 5, 8], [0, 4, 8], [2, 4, 6]];
-let options = ["", "", "", "", "", "", "", "", ""];
+let gameState = ["", "", "", "", "", "", "", "", ""];
 let currentPlayer = "X"
-let gameplay = false;
+let gameActive = true;
+const currentPlayerTurn = () => `It's ${currentPlayer}'s turn!!`
+const winningPlayer = () => `Player ${currentPlayer} wins!!`
 
-startGame()
+//  cellClicked will handle the current cell being clicked, where the current players mark will be added, and that
+//  mark will also be pused to the array at the cellindex of the current box. the "cellindex" is labeled in the html,
+// and we will take that number assigned to that div's cell index and push current players mark to the matching 
+// index in the gameState array
 
+document.querySelector('game-area').addEventListener('click', cellClicked)
 
-function startGame() {
-    boxes.forEach(box => box.addEventListener("click", boxClicked));
-    resetBtn.addEventListener("click", resetGame);
-    playerTurn.textContent = `It is ${currentPlayer}'s turn!`
-    gameplay = true;
-}
-
-function boxClicked() {
-    const boxIndex = this.getAttribute("cellIndex");
-
-    if (options[boxIndex] != "" || !gameplay) {
-        return;
-    }
-    fillInBox(this, boxIndex);
-    checkWinner();
-}
-
-function fillInBox(box, index) {
-    options[index] = currentPlayer;
-    box.textContent = currentPlayer;
-}
-
-function switchPlayer() {
-    currentPlayer = (currentPlayer == "X") ? "O" : "X";
-    playerTurn.textContent = `It Is ${currentPlayer}'s turn!`
-}
-
-function resetGame() {
-
-}
-
-function checkWinner() {
-    let roundWon = false;
-    for (let i = 0; i < winningCombos.length; i++) {
-        const condition = winningCombos[i];
-        const cellA = options[condition[0]];
-        const cellB = options[condition[1]];
-        const cellC = options[condition[2]];
-
-        if (cellA == "" || cellB == "" || cellC == "") {
-            continue;
+function cellClicked(cellClickedAction) {
+    if (gameActive) {
+        const clickedCell = clickedCellAction.target
+        const clickedCellIndex = parseInt(cellClickedAction.target.getAttribute('cellIndex'));
+        if (gameState[clickedCellIndex] !== "") {
+            return;
         }
-        if (cellA == cellB && cellB == cellC) {
-            roundWon = true;
-            break;
-        }
-        if (roundWon) {
-            modalText.textContent = `${currentPlayer} wins the game!!!!!`;
-            winningModal.addEventListener('show.bs.modal', () => modalText.focus())
-            gameplay = false;
-            console.log(`${currentPlayer} wins!`)
-        } else if (!options.includes("")) {
-            console.log("DRAW!");
-            gameplay = false;
-        } else {
-            switchPlayer()
-        }
-
     }
 }
+
+
