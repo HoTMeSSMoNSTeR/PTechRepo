@@ -33,3 +33,6 @@ function Stars() {
         </div >
     }
 }
+
+export default Stars
+ReactDOM.render(<Stars />)

@@ -5,11 +5,16 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Movie from './components/Movie.js'
+// import Stars from './components/Stars.js'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Movie />
+  <div>
+    <Movie />
+
+  </div>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
