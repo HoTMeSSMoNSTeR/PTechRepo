@@ -1,0 +1,11 @@
+REST = Representational State Transfer
+JSON = JavaScript Object notation 
+
+HTTP Verb methods
+    -this is for when we need to request data 
+    from another place. 
+    These mthods are:
+        Create => Post
+        Read => Get
+        Update => Update
+        Delete => Delete 
