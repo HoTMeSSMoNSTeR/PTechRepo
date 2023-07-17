@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import '../index.css';
 import { FaStar } from 'react-icons/fa'
 
-function Stars() {
+export default function Stars() {
 {
         const [rating, setRating] = useState(null);
         const [hover, setHover] = useState(null);
@@ -34,5 +34,3 @@ function Stars() {
     }
 }
 
-export default Stars
-ReactDOM.render(<Stars />)

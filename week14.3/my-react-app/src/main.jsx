@@ -6,8 +6,13 @@ import Movie from './Movie.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <App /> */}
-    <Movie
+    <App />
+  </React.StrictMode>,
+)
+
+
+
+    {/* <Movie
     title="The Nightmare Before Christmas"
     img="https://m.media-amazon.com/images/M/MV5BMTc5MDY0MjkwNV5BMl5BanBnXkFtZTcwNTk2Njk3OA@@._V1_.jpg"
     alt="A movie poster for the Nightmare Before Christmas, a cartoon skeleton and doll standing on a hill top, with a large moon behind them. They are standing between a group of three children in costumes and a ghost dog."
@@ -38,6 +43,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
      rating="R"
      year="2004"
      synopsis="Two strangers awaken in a room with no recollection of how they got there, and soon discover they're pawns in a deadly game perpetrated by a notorious serial killer.-IMDB"
-    />
-  </React.StrictMode>,
-)
+    /> */}
