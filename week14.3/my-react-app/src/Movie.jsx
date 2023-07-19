@@ -17,6 +17,9 @@ export default function Movie(props) {
                 <p className='card-text'>{props.synopsis}</p>
                 <ReviewForm />
             </div>
+            <div>
+                
+            </div>
 
         </>
     )

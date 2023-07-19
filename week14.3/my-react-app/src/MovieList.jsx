@@ -6,6 +6,8 @@ export default [
         rating: "PG-13",
         year: "2014",
         synopsis: "After discovering that her boyfriend is married, Carly meets the wife he's been betraying; when yet another affair is discovered, all three women team up to plot revenge on the three-timing S.O.B.-IMDB",
+        reviews: [],
+        // change the word rating i already used it 
     },
     {
         title: "The Nightmare Before Christmas",
@@ -14,6 +16,7 @@ export default [
         rating: "PG",
         year: "1993",
         synopsis: "Jack Skellington, king of Halloween Town, discovers Christmas Town, but his attempts to bring Christmas to his home causes confusion.-IMDB",
+        reviews: [],
     },
     {
         title: "Scream",
@@ -22,6 +25,7 @@ export default [
         rating: "R",
         year: "1996",
         synopsis: "A year after the murder of her mother, a teenage girl is terrorized by a masked killer who targets her and her friends by using scary movies as part of a deadly game.-IMDB",
+        reviews: [],
     },
     {
         title: "Saw",
@@ -29,7 +33,8 @@ export default [
         alt: "A movie poster for the movie Saw, a white background with a bronzed circular saw, encompassing a smaller handsaw.",
         rating: "R",
         year: "2004",
-        synopsis: "Two strangers awaken in a room with no recollection of how they got there, and soon discover they're pawns in a deadly game perpetrated by a notorious serial killer.-IMDB"
+        synopsis: "Two strangers awaken in a room with no recollection of how they got there, and soon discover they're pawns in a deadly game perpetrated by a notorious serial killer.-IMDB",
+        reviews: [],
     },
     {
         title: "Shindler's List",
@@ -38,7 +43,8 @@ export default [
         rating: "R",
         year: "1993",
         synopsis: "In German-occupied Poland during World War II, industrialist Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.-IMDB",
-    },
+        reviews: [],
+    },  
     {
         title: "Ponyo",
         img: "https://images.justwatch.com/poster/170854955/s592/ponyo",
@@ -46,6 +52,7 @@ export default [
         rating: "G",
         year: "2008",
         synopsis: "A five-year-old boy develops a relationship with Ponyo, a young goldfish princess who longs to become a human after falling in love with him.-IMDB",
+        reviews: []
     }, 
 
 ]

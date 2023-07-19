@@ -12,6 +12,7 @@ function App() {
       rating={movie.rating}
       year={movie.year}
       synopsis={movie.synopsis} 
+      reviews={movie.rating}
        />
   })
   return (
