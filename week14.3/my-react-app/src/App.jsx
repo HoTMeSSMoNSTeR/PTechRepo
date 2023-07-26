@@ -5,14 +5,17 @@ import Movie from './Movie'
 
 function App() {
   const data = MovieList.map(movie => {
-    return <Movie 
-      title={movie.title} 
-      img={movie.img} 
-      alt={movie.alt}
-      rating={movie.rating}
-      year={movie.year}
-      synopsis={movie.synopsis} 
-      reviews={movie.rating}
+    return <Movie
+      key={movie.id} 
+      {...movie}
+      // title={movie.title} 
+      // img={movie.img} 
+      // alt={movie.alt}
+      // rating={movie.rating}
+      // year={movie.year}
+      // synopsis={movie.synopsis} 
+      // reviews={movie.reviews}
+      // KEEPING THESE HERE TO HELP ME REMEMBER WHAT THE SPREAD OPERATOR IS DOING!!!!!!
        />
   })
   return (
